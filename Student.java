@@ -6,8 +6,8 @@ public class Student {
         String amount = JOptionPane.showInputDialog("Enter the amount of students: ");
         int num = Integer.parseInt(amount);
         Number = new int[num];
+        System.out.println("Student Details, Department of ILT");
         getInfo(num);
-
     }
     static void getInfo(int num){
         String FirstName;
@@ -29,6 +29,7 @@ public class Student {
         String States="^(?:(A[KLRZ]|C[AOT]|D[CE]|FL|GA|HI|I[ADLN]|K[SY]|LA|M[ADEINOST]|N[CDEHJMVY]|O[HKR]|P[AR]|RI|S[CD]|T[NX]|UT|V[AIT]|W[AIVY]))$";
         String Zips="^[0-9]{5}(?:-[0-9]{4})?$";
         String[] CS=new String[]{"freshman","sophomore","junior","senior","Freshman","Sophomore","Junior","Senior"};
+        System.out.println("Amount of Students: "+num);
         for(int a = 0; a < num; a++){
             FirstName=JOptionPane.showInputDialog("Enter your first name:");
             while(!(FirstName.matches(Names))){
@@ -67,7 +68,6 @@ public class Student {
             Z = Integer.parseInt(Zip);
             while(!(Zip.matches(Zips))){
                 Zip=JOptionPane.showInputDialog("INVALID! Enter your zip code:");
-
             }
             displayInfo(FirstName, LastName, PeopleSoft, ClassStandings, Email, Address, City, State, Zip, num);
         }
@@ -84,16 +84,15 @@ public class Student {
         String S = State;
         String Zi = Zip;
         int NU = num;
-
         String[] BOB=new String[]{F,L,Pe,Cla,E,A,Ci,S,Zi};
-        System.out.println("Student Details, Department of ILT");
-        System.out.println("Amount of Students: "+num);
-        for(int p = 0; p < BOB.length; p++){
-            System.out.print(BOB[p]+"\t");
-        }
+        System.out.print(BOB[0]+"\t");
+        System.out.print(BOB[1]+"\t");
+        System.out.print(BOB[2]+"\t");
+        System.out.print(BOB[3]+"\t");
+        System.out.print(BOB[4]+"\t");
+        System.out.print(BOB[5]+"\t");
+        System.out.print(BOB[6]+"\t");
+        System.out.print(BOB[7]+"\t");
         System.out.println();
-
-
-
     }
 }
