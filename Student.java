@@ -86,7 +86,7 @@ public class Student {
         int NU = num;
 
         String[] BOB=new String[]{F,L,Pe,Cla,E,A,Ci,S,Zi};
-
+        System.out.println("Student Details, Department of ILT");
         System.out.println("Amount of Students: "+num);
         for(int p = 0; p < BOB.length; p++){
             System.out.print(BOB[p]+"\t");
